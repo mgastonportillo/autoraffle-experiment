@@ -136,8 +136,11 @@ submit_comm = iter_apow + iter_gb
 # My 'hack' to get into the input field
 hack_input_filed()
 
-# Submit bot commands
+
+# Saving bot commands into a file and submitting them
+temp = open('commands.txt', "w")
 for comm in submit_comm:
+    temp.write(comm)
     n = 1
     actions.send_keys(comm)
     actions.perform()
@@ -145,6 +148,7 @@ for comm in submit_comm:
     actions.send_keys(Keys.ENTER * n)
     actions.perform()
     time.sleep(4)
+temp.close()
 time.sleep(3)
 
 # PERFORM RAFFLES
