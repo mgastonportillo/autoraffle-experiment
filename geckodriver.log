@@ -1,0 +1,151 @@
+1658788306356	geckodriver	INFO	Listening on 127.0.0.1:52135
+1658788310326	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofilevWDKHQ"
+1658788311367	Marionette	INFO	Marionette enabled
+1658788311387	Marionette	INFO	Listening on port 52148
+Read port: 52148
+1658788311788	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofilevWDKHQ\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658789340930	geckodriver	INFO	Listening on 127.0.0.1:54625
+1658789344962	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileSVL3t6"
+1658789346008	Marionette	INFO	Marionette enabled
+1658789346022	Marionette	INFO	Listening on port 54639
+Read port: 54639
+1658789346525	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileSVL3t6\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658789441927	geckodriver	INFO	Listening on 127.0.0.1:54704
+1658789445550	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileDlLeKJ"
+1658789446305	Marionette	INFO	Marionette enabled
+1658789446328	Marionette	INFO	Listening on port 54717
+Read port: 54717
+1658789446836	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileDlLeKJ\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1658789487659	Marionette	INFO	Stopped listening on port 54717
+1658789570508	geckodriver	INFO	Listening on 127.0.0.1:54784
+1658789574323	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileT3jXqy"
+1658789575534	Marionette	INFO	Marionette enabled
+1658789575546	Marionette	INFO	Listening on port 54797
+Read port: 54797
+1658789575974	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileT3jXqy\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658789936646	geckodriver	INFO	Listening on 127.0.0.1:54917
+1658790013988	geckodriver	INFO	Listening on 127.0.0.1:52776
+1658790017723	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileHXDkb0"
+1658790018540	Marionette	INFO	Marionette enabled
+1658790018547	Marionette	INFO	Listening on port 52790
+Read port: 52790
+1658790018876	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileHXDkb0\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658790106444	geckodriver	INFO	Listening on 127.0.0.1:52860
+1658790110585	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofile3hqkXa"
+1658790111358	Marionette	INFO	Marionette enabled
+1658790111368	Marionette	INFO	Listening on port 52874
+Read port: 52874
+1658790111720	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofile3hqkXa\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658790522505	geckodriver	INFO	Listening on 127.0.0.1:60819
+1658790526126	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofile9c6A1E"
+1658790526840	Marionette	INFO	Marionette enabled
+1658790526848	Marionette	INFO	Listening on port 60832
+Read port: 60832
+1658790527199	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofile9c6A1E\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658790728611	geckodriver	INFO	Listening on 127.0.0.1:52445
+1658790732329	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofilef1aFJW"
+1658790733048	Marionette	INFO	Marionette enabled
+1658790733059	Marionette	INFO	Listening on port 52459
+Read port: 52459
+1658790733438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofilef1aFJW\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658791905694	geckodriver	INFO	Listening on 127.0.0.1:57062
+1658791909447	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofile6s05YE"
+1658791910218	Marionette	INFO	Marionette enabled
+1658791910228	Marionette	INFO	Listening on port 57076
+Read port: 57076
+1658791910568	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofile6s05YE\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658792606122	Marionette	INFO	Stopped listening on port 57076
+1658793571255	geckodriver	INFO	Listening on 127.0.0.1:65069
+1658793574763	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--start-maximized" "--disable-extensions" "-no-remote" "-profile" "C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileSmgEAm"
+1658793575280	Marionette	INFO	Marionette enabled
+1658793575287	Marionette	INFO	Listening on port 65082
+Read port: 65082
+1658793575550	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\gale\\AppData\\Local\\Temp\\rust_mozprofileSmgEAm\\search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 2193: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+JavaScript warning: https://discord.com/assets/cbc98c97c3635bf34da3.js, line 4323: unreachable code after return statement
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://discord.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
