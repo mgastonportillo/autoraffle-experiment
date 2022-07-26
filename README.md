@@ -6,6 +6,7 @@
 <li>I used the <code>open()</code> function to read a couple files I created to input the name of the participants for the two different awards we offer</li>
 <li>Then I created a Python Class to avoid messing around with <code>global statements</code>, getting to practice a bunch, and created some very usedul functions to turn these names into bot commands, with the right arguments and values</li>
 <li><b>Selenium</b> allowed me to manipulate a <b>Firefox WebDriver</b> in order to bring automation into the next level (for obvious reasons I won't mention exactly how but all you need to know is that Selenium is a fantastic tool when you need to automate your browser)</li>
+<li><b>*UPDATED*</b> - It performs the raffle in the right channel now too!</li>
 <li>Now I'll sit and enjoy creating these raffles again!</li>
 </ul>
 <hr>You can tell I'm quite proud of the outcome; I'm fascinated by the power of this wonderful snake and I will continue exploring its world for sure.
