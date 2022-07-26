@@ -7,6 +7,7 @@
 <li>Then I created a Python Class to avoid messing around with <code>global statements</code>, getting to practice a bunch, and created some very usedul functions to turn these names into bot commands, with the right arguments and values</li>
 <li><b>Selenium</b> allowed me to manipulate a <b>Firefox WebDriver</b> in order to bring automation into the next level (for obvious reasons I won't mention exactly how but all you need to know is that Selenium is a fantastic tool when you need to automate your browser)</li>
 <li><b>*UPDATED*</b> - Now it performs the raffle (and in the right channel) too!</li>
+<li>And writes the command outputs into '/commands.txt'</li>
 </ul>
 <hr>You can tell I'm quite proud of the outcome; I'm fascinated by the power of this wonderful snake and I will continue exploring its world for sure.
 </br></br>
