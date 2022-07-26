@@ -1,0 +1,7 @@
+<h1 align="center">My 1st Python Automation Project</h1>
+<p align="center">Built with 0 prior knowledge on the libraries used, in 1 day</p>
+<hr>
+<p>My goal with this project was to have my first interaction with automation in Python by solving a real problem from my daily life, exploring functions like the powerful built in <code>open()</code> and an amazing library like <code>Selenium</code>.</br></br>It was a wonderful experience; a great way to keep my mind focused by solving a relevant "problem" to myself and solidifying knowledge (I'm looking at you, Python Classes).</p><hr><h3>Some background</h2>
+<p><b>Velaris Eroica Awards</b> is a project I started to keep the guild members of my guild, for the only game I play, engaged and motivated. My girlfriend and I keep track of their performances through a system of spreadsheets I designed and then we reward them for their efforts.</br></br>It used to be quite the process: gathering the data, preparing it to turn it into actionable bot commands, hosting a weekly raffle event, then notifying the winners to finally prepare their actual rewards...</p><b>But Python is here to change my life for good</b>.</br></br>You can tell I'm quite proud of the outcome; I'm fascinated by the power of this tool and I will continue exploring the world of Python.
+</br></br>
+That's it by now from your friendly Python neighbour! But definitely not the last time you'll hear from me.
