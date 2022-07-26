@@ -175,7 +175,7 @@ time.sleep(2)
 temp = open('commands.txt', 'w')
 for comm in submit_comm:
     temp.write(comm)
-    send.input_args(comm)
+    send.input_args(comm + "\n")
     time.sleep(1)
     enter.hit_enter(1)
     time.sleep(2)
