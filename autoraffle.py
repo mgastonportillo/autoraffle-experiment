@@ -19,8 +19,8 @@ driver = webdriver.Firefox(driver_path, options=options)
 wait = WebDriverWait(driver, 5)
 
 # RAFFLE SETTINGS - MODIFY FOR EVERY NEW RAFFLE
-gb = 'gb4s3'  # "Guild Boss Tamer" raffle name
 apow = 'pow4s3'  # "Player of The Week" raffle name
+gb = 'gb4s3'  # "Guild Boss Tamer" raffle name
 
 # USEFUL ACTIONS FUNCTIONS
 
@@ -55,10 +55,8 @@ class WebDriverActions:
         self.actions.perform()
 
 
-# Creating instances
-tab = WebDriverActions()
-enter = WebDriverActions()
-send = WebDriverActions()
+# Creating instance
+wda = WebDriverActions()
 
 # CONNECT TO DISCORD AND LOGIN
 # Open Discord in channel
@@ -73,11 +71,11 @@ time.sleep(2)
 
 
 # My 'hack' to access the password field
-tab.hit_tab(1)
+wda.hit_tab(1)
 time.sleep(2)
 
 # Submit password and click enter button
-send.input_args('USER_PASSWORD')
+wda.input_args('USER_PASSWORD')
 
 time.sleep(2)
 wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,
@@ -86,20 +84,20 @@ wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,
 time.sleep(10)
 
 # My 'hack' to get into the input field
-tab.hit_tab(1)
+wda.hit_tab(1)
 time.sleep(1)
 
 # CREATING THE RAFFLES
 # Submit command to create raffle for 'Player of the Week'
-send.input_args(f'!raffle create {apow}')
+wda.input_args(f'!raffle create {apow}')
 time.sleep(1)
-enter.hit_enter(1)
+wda.hit_enter(1)
 time.sleep(1)
 
 # Submit command to create raffle for 'Guild Boss Tamer'
-send.input_args(f'!raffle create {gb}')
+wda.input_args(f'!raffle create {gb}')
 time.sleep(1)
-enter.hit_enter(1)
+wda.hit_enter(1)
 time.sleep(1)
 
 # Generate the commands to add entries
@@ -168,16 +166,16 @@ submit_comm = iter_raff_pow + iter_raff_gb
 
 # SUMBITTING THE COMMANDS
 # My 'hack' to get into the input field
-tab.hit_tab(1)
+wda.hit_tab(1)
 time.sleep(2)
 
 # Saving bot commands into a file and submitting them
 temp = open('commands.txt', 'w')
 for comm in submit_comm:
     temp.write(comm)
-    send.input_args(comm + "\n")
+    wda.input_args(comm + "\n")
     time.sleep(1)
-    enter.hit_enter(1)
+    wda.hit_enter(1)
     time.sleep(2)
 temp.close()
 time.sleep(2)
@@ -188,25 +186,25 @@ driver.get('https://discord.com/channels/CHANNEL_ID')
 time.sleep(10)
 
 # My 'hack' to get into the input field
-tab.hit_tab(1)
+wda.hit_tab(1)
 time.sleep(2)
 
 # Submit commands
-send.input_args(f'!raffle tickets list {gb}')
+wda.input_args(f'!raffle tickets list {apow}')
 time.sleep(1)
-enter.hit_enter(1)
+wda.hit_enter(1)
 time.sleep(2)
-send.input_args(f'!raffle roll {gb}')
+wda.input_args(f'!raffle roll {apow}')
 time.sleep(1)
-enter.hit_enter(1)
+wda.hit_enter(1)
 time.sleep(2)
-send.input_args(f'!raffle tickets list {gb}')
+wda.input_args(f'!raffle tickets list {gb}')
 time.sleep(1)
-enter.hit_enter(1)
+wda.hit_enter(1)
 time.sleep(2)
-send.input_args(f'!raffle roll {gb}')
+wda.input_args(f'!raffle roll {gb}')
 time.sleep(1)
-enter.hit_enter(1)
+wda.hit_enter(1)
 time.sleep(2)
 
 driver.quit()
