@@ -14,15 +14,15 @@ options.add_argument('--start-maximized')
 options.add_argument('--disable-extensions')
 
 # FIREFOX DRIVER SETUP
-driver_path = 'C:\\folder\\of\\the\\webdriver'
+driver_path = 'path\\to\\python-autoraffle-eroica'
 driver = webdriver.Firefox(driver_path, options=options)
 wait = WebDriverWait(driver, 5)
 
 # RAFFLE SETTINGS - MODIFY FOR EVERY NEW RAFFLE
-apow = 'pow4s3'  # "Player of The Week" raffle name
-gb = 'gb4s3'  # "Guild Boss Tamer" raffle name
+apow = 'powNOT'  # "Player of The Week" raffle name
+gb = 'gb4NOT'  # "Guild Boss Tamer" raffle name
 
-# USEFUL ACTIONS FUNCTIONS
+# USEFUL FUNCTIONS
 
 
 class WebDriverActions:
@@ -37,14 +37,14 @@ class WebDriverActions:
         """Hits TAB for you"""
         self.actions = ActionChains(driver)
         self.times = times
-        self.actions.send_keys(Keys.TAB * times)
+        self.actions.send_keys(Keys.TAB * self.times)
         self.actions.perform()
 
     def hit_enter(self, times):
         """Hits ENTER for you"""
         self.actions = ActionChains(driver)
         self.times = times
-        self.actions.send_keys(Keys.ENTER * times)
+        self.actions.send_keys(Keys.ENTER * self.times)
         self.actions.perform()
 
     def input_args(self, txt_str):
@@ -55,58 +55,12 @@ class WebDriverActions:
         self.actions.perform()
 
 
-# Creating instance
-wda = WebDriverActions()
-
-# CONNECT TO DISCORD AND LOGIN
-# Open Discord in channel
-driver.get('https://discord.com/channels/CHANNEL_ID')
-time.sleep(2)
-
-# Submit the email or phone number
-wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,
-                                      'input.inputDefault-3FGxgL input-2g-os5 inputField-2RZxdl'.replace(' ', '.'))))\
-    .send_keys("USER_EMAIL")
-time.sleep(2)
-
-
-# My 'hack' to access the password field
-wda.hit_tab(1)
-time.sleep(2)
-
-# Submit password and click enter button
-wda.input_args('USER_PASSWORD')
-
-time.sleep(2)
-wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,
-                                      'button.marginBottom8-emkd0_ button-1cRKG6 button-f2h6uQ lookFilled-yCfaCM colorBrand-I6CyqQ sizeLarge-3mScP9 fullWidth-fJIsjq grow-2sR_-F'.replace(' ', '.'))))\
-    .click()
-time.sleep(10)
-
-# My 'hack' to get into the input field
-wda.hit_tab(1)
-time.sleep(1)
-
-# CREATING THE RAFFLES
-# Submit command to create raffle for 'Player of the Week'
-wda.input_args(f'!raffle create {apow}')
-time.sleep(1)
-wda.hit_enter(1)
-time.sleep(1)
-
-# Submit command to create raffle for 'Guild Boss Tamer'
-wda.input_args(f'!raffle create {gb}')
-time.sleep(1)
-wda.hit_enter(1)
-time.sleep(1)
-
-# Generate the commands to add entries
+# Generates the commands to add entries
 
 
 class EroicaRaffle:
     """Read specific .txt files and modify their values to turn them into accionable bot commands"""
 
-    # Defining constructor
     def __init__(self):
         self.the_file = []
         self.list_names = []
@@ -123,7 +77,6 @@ class EroicaRaffle:
     def create_pow(self):
         """Creates the 'Player of The Week' Award commands"""
         for line in self.list_names:
-            # Simple f-string to output the bot command; max of entries is 2 and bot sums repeated entries up
             self.commands_pow.append(
                 f'!raffle tickets add {apow} "{line}" 1')
         return self.commands_pow
@@ -132,7 +85,7 @@ class EroicaRaffle:
         """Creates the 'Guild Boss Tamer' Award commands"""
         # Reversing the list to make it easier to output the commands
         self.list_names = self.list_names[::-1]
-        # default values for entry so that first value is 3
+        # default values for 'entry' so that first value is 3
         entry = 2
         # Grabbing indexes of list items to operate with them
         for index, line in enumerate(self.list_names):
@@ -149,108 +102,108 @@ class EroicaRaffle:
         return self.commands_gb
 
 
-# Creating instance of the class
+# Creates instances of EroicaRaffle()
 raff_pow = EroicaRaffle()
-# Calling the right methods for 'Player of the Week'
 raff_pow.read_names('names_pow.txt')
 iter_raff_pow = raff_pow.create_pow()
 
-# Creating instance of the class
 raff_gb = EroicaRaffle()
-# Calling the right methods for 'Guild Boss Tamer'
 raff_gb.read_names('names_gb.txt')
 iter_raff_gb = raff_gb.create_gb()
 
-# Concatenating both lists for a smoother command submission method
+wda = WebDriverActions()
+
+# Concatenates both command lists
 submit_comm = iter_raff_pow + iter_raff_gb
 
-# SUMBITTING THE COMMANDS
+# CONNECTS TO DISCORD AND LOGIN
+# Opens Discord in channel
+driver.get('https://discord.com/channels/CHANNEL_ID')
+time.sleep(1)
+
+# Skips the 'Discord App Detected message'
+wait.until(EC.element_to_be_clickable((By.XPATH,
+                                      '/html/body/div[1]/div[2]/div/div[1]/div/div/div/section/div/button[2]')))\
+    .click()
+time.sleep(1)
+
+# Submits the email or phone number
+wait.until(EC.element_to_be_clickable((By.XPATH,
+                                      '/html/body/div[1]/div[2]/div/div[1]/div/div/div/div/form/div/div/div[1]/div[2]/div[1]/div/div[2]/input')))\
+    .send_keys("USER_EMAIL")
+time.sleep(1)
+
+# Submits password
+wait.until(EC.element_to_be_clickable((By.XPATH,
+                                      '/html/body/div[1]/div[2]/div/div[1]/div/div/div/div/form/div/div/div[1]/div[2]/div[2]/div/input')))\
+    .send_keys('USER_PASS')
+time.sleep(1)
+
+# Hits enter and logs in
+wait.until(EC.element_to_be_clickable((By.XPATH,
+                                      '/html/body/div[1]/div[2]/div/div[1]/div/div/div/div/form/div/div/div[1]/div[2]/button[2]')))\
+    .click()
+time.sleep(5)
+
+# CREATES THE RAFFLES AND SUBMITS COMMANDS
 # My 'hack' to get into the input field
 wda.hit_tab(1)
-time.sleep(2)
+time.sleep(1)
 
-# Saving bot commands into a file and submitting them
-temp = open('commands.txt', 'w')
+# Submits command to create raffle for 'Player of the Week'
+wda.input_args(f'!raffle create {apow}')
+time.sleep(1)
+wda.hit_enter(1)
+time.sleep(1)
+
+# Submits command to create raffle for 'Guild Boss Tamer'
+wda.input_args(f'!raffle create {gb}')
+time.sleep(1)
+wda.hit_enter(1)
+time.sleep(1)
+
+# My 'hack' to get into the input field
+wda.hit_tab(1)
+time.sleep(1)
+
+# Resets 'commands.txt'
+with open('commands.txt', 'w') as c:
+    c.truncate(0)
+
+# Saves bot commands into a file and submits them
 for comm in submit_comm:
-    temp.write(comm)
-    wda.input_args(comm + "\n")
+    temp = open('commands.txt', 'w')
+    temp.write(comm + "\n")
+    wda.input_args(comm)
     time.sleep(1)
     wda.hit_enter(1)
-    time.sleep(2)
-temp.close()
-time.sleep(2)
+    time.sleep(1)
 
-# PERFORM RAFFLES
-# Open raffle channel
+# PERFORMS RAFFLES
+# Opens raffle channel
 driver.get('https://discord.com/channels/CHANNEL_ID')
-time.sleep(10)
+time.sleep(5)
 
 # My 'hack' to get into the input field
 wda.hit_tab(1)
-time.sleep(2)
+time.sleep(1)
 
-# Submit commands
+# Submits commands
 wda.input_args(f'!raffle tickets list {apow}')
 time.sleep(1)
 wda.hit_enter(1)
-time.sleep(2)
+time.sleep(1)
 wda.input_args(f'!raffle roll {apow}')
 time.sleep(1)
 wda.hit_enter(1)
-time.sleep(2)
+time.sleep(1)
 wda.input_args(f'!raffle tickets list {gb}')
 time.sleep(1)
 wda.hit_enter(1)
-time.sleep(2)
+time.sleep(1)
 wda.input_args(f'!raffle roll {gb}')
 time.sleep(1)
 wda.hit_enter(1)
-time.sleep(2)
-
+time.sleep(1)
+# Closes WebDriver session
 driver.quit()
-
-# ------------------------------------------------------------
-# --- DIRTY CODE, DON'T LOOK! (Back-up of the first draft) ---
-# ------------------------------------------------------------
-# # Values to modify manually
-# gb = 'gb4s3'  # "Guild Boss Tamer" raffle name
-# pow = 'pow4s3'  # "Player of The Week" raffle name
-
-# # Initialise empty lists
-# names = []
-# commands_pow = []
-# commands_gb = []
-
-# def read_file(file):
-#     """Reads a text file and turns it into a list"""
-#     with open(file, 'r') as f:
-#         # splitlines() takes care of the line jumps
-#         global names
-#         names = f.read().splitlines()
-#     return names
-
-# read_pow = read_file('names_pow.txt')
-# read_gb = read_file('names_gb.txt')
-
-# def pow_create():
-#     """Creates the 'Player of The Week' Award commands"""
-#     for line in read_pow:
-#         commands_pow.append(f'!raffle tickets list add {pow} "{line}" 1')
-#     return commands_pow
-
-# def gb_create():
-#     """Creates the 'Guild Boss Tamer' Award commands"""
-#     global read_gb
-#     read_gb = read_gb[::-1]
-#     entry = 2
-#     for line in read_gb:
-#         if i in range(len(read_gb)) < 5:
-#             commands_gb.append(f'!raffle tickets list add {gb} "{line}" 1')
-#         elif i in range(len(read_gb)) < 10:
-#             commands_gb.append(f'!raffle tickets list add {gb} "{line}" 2')
-#         else:
-#             entry += 1
-#             commands_gb.append(
-#                 f'!raffle tickets list add {gb} "{line}" {entry}')
-#     return commands_gb
-# ------------------------------------------------------------
